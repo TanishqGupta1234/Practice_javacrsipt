@@ -34,7 +34,7 @@ function myFunc() {
     console.log("Hello from myFunc");
 } // function
 
-console.log(typeof score); // number
+// console.log(typeof score); // number
 
 // Primitive Data Types:
 
@@ -50,3 +50,29 @@ console.log(typeof score); // number
 // Function -> Example:
 // function greet(name) {
 //   console.log("Hello, " + name + "!");
+
+
+// ++++++++++++++++++++ 
+
+// Stack(Primitve) and heap(Non-primitive) memory allocation
+
+let myYoutubeName = "Tanishq Gupta"; // string stored in stack memory
+
+let anotherName = myYoutubeName; // anotherName points to the same string in stack memory
+anotherName = "Tanishq Ji"; // this creates a new string in stack memory
+console.log(anotherName); // Output: Tanishq Gupta
+console.log(myYoutubeName); // Output: Tanishq Gupta
+
+
+let userOne = {
+    email :"tanishq@123@gmail.com",
+    upi :  "tanishq@upi",
+
+}
+
+
+let userTwo = userOne; // userTwo points to the same object in heap memory
+
+userTwo.email ="tanishq@gmail.com"
+console.log(userTwo.email);
+console.log(userOne.email);
