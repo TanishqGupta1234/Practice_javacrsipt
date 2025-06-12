@@ -35,3 +35,4 @@ const myn2 = myArray.splice(1,3); // Splicing the array from index 1 to index 3 
 console.log(myn2); // Output: [1, 2, 3]
 
 // difference between splice and slice is that in splice the original array is modified and in slice the original array is not modified.
+
