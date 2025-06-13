@@ -46,7 +46,38 @@ const user = [
 ]
 
 // user[1].email // console.log(user[1]?.email); // undefined, no error
-console.log(Object.keys(user)); // ['name', 'age', 'email']
-console.log(Object.values(user)); 
-console.log(Object.entries(user)); 
-console.log(tinderUser.hasOwnProperty("name")); // true
+// console.log(Object.keys(user)); // ['name', 'age', 'email']
+// console.log(Object.values(user)); 
+// console.log(Object.entries(user)); 
+// console.log(tinderUser.hasOwnProperty("name")); // true
+
+
+const course = {
+    coursename : "js hindi",
+    price : "999",
+    courseInstructor : "Tanishq",
+}
+
+// course.courseInstructor
+
+const {courseInstructor : instructor} = course; // destructuring assignment
+
+// console.log(courseInstructor);
+console.log(instructor); // Tanishq
+
+// const navbar = ({company}) =>{
+
+// }
+
+// navbar(company = "tanishq");
+
+// {
+//     "name": "Tanishq",
+//     "course": "JavaScript",
+//     "price": "free",
+// }
+[
+   {},
+   {},
+   {} 
+]
