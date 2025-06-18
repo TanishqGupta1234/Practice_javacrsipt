@@ -16,4 +16,4 @@
 
 (() => {
   console.log(`Hello from another IIFE! ${name}`);
-})('tanoshq'); // This is another way to write an IIFE using arrow function syntax
+})('tanos'); // This is another way to write an IIFE using arrow function syntax
