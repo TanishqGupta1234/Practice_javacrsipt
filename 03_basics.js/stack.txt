@@ -1,0 +1,35 @@
+Javascript Execution Context
+
+{}=> Global Execution Context
+// Global Execution Context toh hoga he hoga  uske andr value hai ke nhi This ke voh alg baat hai
+
+
+function Execution Context
+
+Eval Execution Context
+
+
+{} => Javascript k code
+2 phases mein run hota h
+
+Memory Creation phase
+Execution phase
+
+
+1. Global Execution 
+       |
+       This
+2. Memory phase
+val1 = undefined
+val2 = undefined
+addNum = defination
+result1 = undefined
+result2 = undefined
+
+3. Execution phase
+val1 = 10
+val2 = 5
+addNum -> 
+
+
+
