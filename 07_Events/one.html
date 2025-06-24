@@ -109,6 +109,7 @@
         // console.log(e);
         console.log(e.target.parentNode); // this will give the element that was clicked
         if (e.target.tagName === "IMG") {
+            console.log(e.target.id); // this will give the id of the element that was clicked
             let removeIt = e.target.parentNode
         remove.remove(); // this will remove the element that was clicked
 
