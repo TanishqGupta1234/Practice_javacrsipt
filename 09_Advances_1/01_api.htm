@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
+</body>
+<script>
+ const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object which is used to interact with servers. and used for both send and receive data.
+ xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts'); // Initialize a request. The first parameter is the HTTP method (GET, POST, etc.), and the second is the URL.
+ xhr.onreadystatechange = function()
+ {
+    console.log(xhr.readyState); // Log the current state of the request to the console.
+    if(xhr.readyState === 4)
+    {
+        const data = JSON.parse(this.responseText)
+        console.log(data); // When the request is complete (readyState 4), log the response text to the console.
+        console.log(data.followers); // When the request is complete (readyState 4), log the response text to the console.
+    }
+ }
+ xhr.send(); // Send the request to the server.
+
+
+</script>
+</html>
