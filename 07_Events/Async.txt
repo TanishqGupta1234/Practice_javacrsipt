@@ -1,0 +1,18 @@
+// javaScript (default)
+1. Synchronous
+2. single threaded
+
+Excecution Context
+- excute one line of code at a time...
+console.log() -> 1    each wait for last one to complete before executing.
+call stack memory Heap
+
+
+Blocking code vs Non blocking code
+  |                   |
+  block the        read file sync
+  flow of program
+  |
+read file sync   
+
+
