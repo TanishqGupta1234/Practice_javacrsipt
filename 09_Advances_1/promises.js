@@ -26,49 +26,55 @@
 //     console.log("Promise Two is fulfilled"); // This will run when the promise is resolved which means consumed
 // })
 
-const promiseThree = new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    resolve({ username: "John", age: 30 }); // This will resolve the promise with an object
-  }, 1000);
-});
+// const promiseThree = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     resolve({ username: "John", age: 30 }); // This will resolve the promise with an object
+//   }, 1000);
+// });
 
-promiseThree.then(function (user) {
-  console.log(user);
-});
+// promiseThree.then(function (user) {
+//   console.log(user);
+// });
 
-const promiseFour = new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    let error = true; // Change this to true to simulate an error
-    if (!error) {
-      resolve({ username: "tanishq", password: "123" }); // This will resolve the promise
-    } else {
-      reject("Error: Something went wrong!"); // This will reject the promise
-    }
-  }, 2000);
-});
+// const promiseFour = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     let error = true; // Change this to true to simulate an error
+//     if (!error) {
+//       resolve({ username: "tanishq", password: "123" }); // This will resolve the promise
+//     } else {
+//       reject("Error: Something went wrong!"); // This will reject the promise
+//     }
+//   }, 2000);
+// });
 
-promiseFour
-  .then((user) => {
-    console.log(user);
-    return user.username; // This will return the username
-  })
-  .then((username) => {
-    console.log(username); // This will log the username to the console
-  })
-  .catch((error) => {
-    console.log(error); // This will log the error to the console
-  }).finally(() => console.log("Promise Four is completed")); // This will run regardless of the promise being fulfilled or rejected
+// promiseFour
+//   .then((user) => {
+//     console.log(user);
+//     return user.username; // This will return the username
+//   })
+//   .then((username) => {
+//     console.log(username); // This will log the username to the console
+//   })
+//   .catch((error) => {
+//     console.log(error); // This will log the error to the console
+//   }).finally(() => console.log("Promise Four is completed")); // This will run regardless of the promise being fulfilled or rejected
 
-// console.log(username); // This will log the username to the console
+// // console.log(username); // This will log the username to the console
 
-const promiseFive = new Promise(function(resolve, reject){
-    setTimeout(function () {
-        let error = true; // Change this to true to simulate an error
-        if (!error) {
-          resolve({ username: "js wne wrong", password: "123" }); // This will resolve the promise
-        } else {
-          reject("Error: js went wrong!"); // This will reject the promise
-        }
-      }, 1000);
+// const promiseFive = new Promise(function(resolve, reject){
+//     setTimeout(function () {
+//         let error = true; // Change this to true to simulate an error
+//         if (!error) {
+//           resolve({ username: "js wne wrong", password: "123" }); // This will resolve the promise
+//         } else {
+//           reject("Error: js went wrong!"); // This will reject the promise
+//         }
+//       }, 1000);
 
-})
+// })
+
+// async function consumePromiseFive(){
+//     const response = await promiseFive
+//     console.log(response); // This will log the response to the console
+// }
+// consumePromiseFive()
