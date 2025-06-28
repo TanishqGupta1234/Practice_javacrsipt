@@ -30,3 +30,9 @@ console.log(userOne); // User { username: 'hitesh', loginCount: 32, signedIn: tr
 //Jo bhi object function ko call kar raha hota hai, this usi ko point karta hai.
 //An instance is a copy of an object created from a class or constructor function.
 //It means you create a real object using a blueprint (like a class or function). That real object is called an instance.
+
+// new key word is used to create an instance of a class or constructor function.
+//1. new keyword creates a new empty object
+//2. becuase of new keyword, a constructor function is called
+//3. this keyword points to the new empty object
+//4. the constructor function initializes the properties of the new object
