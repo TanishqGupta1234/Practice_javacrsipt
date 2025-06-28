@@ -28,3 +28,40 @@ const min = 10;
 const max = 20;
 
 console.log(Math.random() * (max - min +1) + min ); // Output: Random number between 10 and 20 
+
+//inheritance
+
+const user ={
+    name: "tanishq",
+    email: "tanishqz@hdb.com"
+}
+
+
+const Teacher ={
+    makeVideo : true
+}
+
+const TeachingSupport ={
+    isAvailable : false
+}
+
+const TASupport = {
+    makeAssignments : "Js Assignment",
+    fullTime : true,
+    __proto__: TeachingSupport // Setting up inheritance
+}
+
+Teacher.__proto__= user; // Setting up inheritance
+
+//Object
+Object.setPrototypeOf(TeachingSupport, Teacher); // Setting up inheritance
+let anotherUsername = "ChaiAurCode     "
+
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(`True length is: ${this.trim().length}`);
+}
+
+anotherUsername.trueLength()
+"hitesh".trueLength()
+"iceTea".trueLength()
